@@ -7,17 +7,10 @@ import com.adfenix.readers.ReaderUtils;
 import java.io.File;
 import java.util.List;
 
-public class FileToSaleObjectConverter implements Converter<SaleObject> {
+public class FileToSaleObjectConverter {
 
-    private final Reader<SaleObject> reader;
-    private File file;
-
-    public FileToSaleObjectConverter(File file) {
-        this.file = file;
-        this.reader = ReaderUtils.createReader(file.getName());
-    }
-
-    public List<SaleObject> convert() {
+    public static List<SaleObject> convert(File file) {
+        Reader<SaleObject> reader = ReaderUtils.createReader(file.getName());
         return reader.readAll(file);
     }
 }
