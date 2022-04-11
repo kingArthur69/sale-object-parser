@@ -3,12 +3,13 @@ package com.adfenix;
 import com.adfenix.consumers.MockSaleObjectConsumer;
 import com.adfenix.converters.FileToSaleObjectConverter;
 import com.adfenix.models.SaleObject;
-import org.apache.commons.lang3.exception.ExceptionUtils;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
 import java.nio.file.Paths;
 import java.util.List;
 
+@Slf4j
 public class App {
     public static void main(String[] args) {
         SaleObjectReporter saleObjectReporter = new SaleObjectReporter(new MockSaleObjectConsumer());
@@ -21,11 +22,8 @@ public class App {
 
                 saleObjectReporter.reportObjects(saleObjects);
             } catch (Exception e) {
-                System.out.println(ExceptionUtils.getStackTrace(e));
+                log.error(e.getMessage(), e);
             }
-            /*catch (FileNotFoundException e) {
-                System.out.println("File not found: " +  e.getMessage());
-            }*/
         }
     }
 }

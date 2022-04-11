@@ -15,7 +15,7 @@ public class ReaderUtils {
         } else if("json".equals(extension)){
             return new JsonReaderImpl();
         } else {
-            throw new IllegalArgumentException("Extension is not supported");
+            throw new IllegalArgumentException("Extension is not supported, fileName: " + fileName);
         }
     }
 }
