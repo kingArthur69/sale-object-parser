@@ -1,10 +1,10 @@
-package com.adfenix.readers.json;
+package com.mihaliov_arthur.readers.json;
 
-import com.adfenix.models.SaleObject;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
+import com.mihaliov_arthur.models.SaleObject;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.IOException;

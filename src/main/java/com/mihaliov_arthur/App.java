@@ -1,8 +1,8 @@
-package com.adfenix;
+package com.mihaliov_arthur;
 
-import com.adfenix.consumers.MockSaleObjectConsumer;
-import com.adfenix.converters.FileToSaleObjectConverter;
-import com.adfenix.models.SaleObject;
+import com.mihaliov_arthur.consumers.MockSaleObjectConsumer;
+import com.mihaliov_arthur.converters.FileToSaleObjectConverter;
+import com.mihaliov_arthur.models.SaleObject;
 import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;

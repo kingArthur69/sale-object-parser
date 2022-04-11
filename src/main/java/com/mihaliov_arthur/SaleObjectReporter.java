@@ -1,7 +1,7 @@
-package com.adfenix;
+package com.mihaliov_arthur;
 
-import com.adfenix.consumers.SaleObjectConsumer;
-import com.adfenix.models.SaleObject;
+import com.mihaliov_arthur.consumers.SaleObjectConsumer;
+import com.mihaliov_arthur.models.SaleObject;
 
 import java.util.Comparator;
 import java.util.List;

@@ -1,7 +1,7 @@
-package com.adfenix.readers.csv;
+package com.mihaliov_arthur.readers.csv;
 
-import com.adfenix.models.SaleObject;
-import com.adfenix.readers.Reader;
+import com.mihaliov_arthur.models.SaleObject;
+import com.mihaliov_arthur.readers.Reader;
 import com.opencsv.CSVParser;
 import com.opencsv.CSVParserBuilder;
 import com.opencsv.CSVReader;

@@ -1,4 +1,4 @@
-package com.adfenix.consumers;
+package com.mihaliov_arthur.consumers;
 
 import java.util.Random;
 

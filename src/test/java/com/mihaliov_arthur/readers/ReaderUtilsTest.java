@@ -1,7 +1,7 @@
-package com.adfenix.readers;
+package com.mihaliov_arthur.readers;
 
-import com.adfenix.readers.csv.CsvReaderImpl;
-import com.adfenix.readers.json.JsonReaderImpl;
+import com.mihaliov_arthur.readers.csv.CsvReaderImpl;
+import com.mihaliov_arthur.readers.json.JsonReaderImpl;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.CsvSource;

@@ -1,4 +1,4 @@
-package com.adfenix.readers;
+package com.mihaliov_arthur.readers;
 
 import java.io.File;
 import java.util.List;

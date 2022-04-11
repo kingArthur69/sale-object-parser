@@ -1,8 +1,8 @@
-package com.adfenix.readers;
+package com.mihaliov_arthur.readers;
 
-import com.adfenix.models.SaleObject;
-import com.adfenix.readers.csv.CsvReaderImpl;
-import com.adfenix.readers.json.JsonReaderImpl;
+import com.mihaliov_arthur.models.SaleObject;
+import com.mihaliov_arthur.readers.csv.CsvReaderImpl;
+import com.mihaliov_arthur.readers.json.JsonReaderImpl;
 import org.apache.commons.io.FilenameUtils;
 
 public class ReaderUtils {

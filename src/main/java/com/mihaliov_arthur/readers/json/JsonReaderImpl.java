@@ -1,9 +1,9 @@
-package com.adfenix.readers.json;
+package com.mihaliov_arthur.readers.json;
 
-import com.adfenix.models.SaleObject;
-import com.adfenix.readers.Reader;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.mihaliov_arthur.models.SaleObject;
+import com.mihaliov_arthur.readers.Reader;
 
 import java.io.File;
 import java.util.List;

@@ -1,6 +1,6 @@
-package com.adfenix.readers.json;
+package com.mihaliov_arthur.readers.json;
 
-import com.adfenix.models.SaleObject;
+import com.mihaliov_arthur.models.SaleObject;
 import lombok.Data;
 
 import java.util.List;

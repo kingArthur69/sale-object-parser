@@ -1,7 +1,7 @@
-package com.adfenix.models;
+package com.mihaliov_arthur.models;
 
-import com.adfenix.readers.json.SaleObjectDeserializer;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.mihaliov_arthur.readers.json.SaleObjectDeserializer;
 import lombok.Data;
 
 @Data

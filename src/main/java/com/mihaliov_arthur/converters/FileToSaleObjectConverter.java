@@ -1,8 +1,8 @@
-package com.adfenix.converters;
+package com.mihaliov_arthur.converters;
 
-import com.adfenix.models.SaleObject;
-import com.adfenix.readers.Reader;
-import com.adfenix.readers.ReaderUtils;
+import com.mihaliov_arthur.models.SaleObject;
+import com.mihaliov_arthur.readers.Reader;
+import com.mihaliov_arthur.readers.ReaderUtils;
 
 import java.io.File;
 import java.util.List;

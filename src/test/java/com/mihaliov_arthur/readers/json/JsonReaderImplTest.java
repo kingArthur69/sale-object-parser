@@ -1,6 +1,6 @@
-package com.adfenix.readers.csv;
+package com.mihaliov_arthur.readers.json;
 
-import com.adfenix.models.SaleObject;
+import com.mihaliov_arthur.models.SaleObject;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
@@ -11,27 +11,26 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class CsvReaderImplTest {
+class JsonReaderImplTest {
 
     private List<SaleObject> saleObjects;
 
     @BeforeEach
     void setUp() {
-        CsvReaderImpl csvReader = new CsvReaderImpl();
+        JsonReaderImpl csvReader = new JsonReaderImpl();
 
-        saleObjects = csvReader.readAll(Paths.get("src/test/resources/SaleObjectData/SaleObjects.csv").toFile());
+        saleObjects = csvReader.readAll(Paths.get("src/test/resources/SaleObjectData/SaleObjects.json").toFile());
     }
 
     @ParameterizedTest
     @CsvSource(value = {
-           "0;70;69857143;Stockholm;Försäljningsgatan 14;2;",
-           "1;160;50625000;Stockholm;Lidingövägen 121;",
-           "2;430;23023256;München;Hohenzollernstraße11;",
-           "3;19;134210526;Stockholm;Ringvägen 3;0;",
-           "4;95;32631579;Umeå;Universitetsgränd5;4;"
+            "0;190;18421053;Stockholm;DuperStreet 5;",
+            "1;28;171642821;New York;Crampedstreet 5;18",
+            "2;55;141927255;New York;Crampedstreet 9A;18",
+            "3;105;30476190;Uppsala;Universistetsgatan 104;2",
     }, delimiter = ';')
     void parseTest(int index, int meters, String pricePerMeter, String city, String street, Integer floor) {
-        assertEquals(5, saleObjects.size());
+        assertEquals(4, saleObjects.size());
         SaleObject object = saleObjects.get(index);
         assertAll(
                 () ->assertEquals(meters, object.getSquareMeters()),
@@ -41,4 +40,5 @@ class CsvReaderImplTest {
                 () ->assertEquals(floor, object.getFloor())
         );
     }
+
 }

@@ -126,7 +126,7 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>com.adfenix.App</mainClass>
+              <mainClass>com.mihaliov_arthur.App</mainClass>
             </manifest>
           </archive>
         </configuration>
